@@ -1,11 +1,22 @@
 Comandos úteis
-
 Para:
 Criar um projeto:
 django-admin startproject
+
 Criar um app:
 django-admin startapp
+
 Criar as tabelas defalt do django
 python manage.py migrate
+
 Criar usuário:
 python manage.py createsuperuser --username admin
+
+Gera o arquivo de migração para a base dados das tabelas do modelo de clase do app. Caso deixe sem ele vai passar por todos os apps:
+python manage.py makemigrations core
+
+Lista os comandos que serão executados no  banco de dados passando o app e o arquivo:
+python manage.py sqlmigrate core 0001
+
+Executa o comandos gerados no arquivo de migração:
+python manage.py migrate core 0001
