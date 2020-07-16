@@ -1,4 +1,5 @@
 Comandos úteis
+
 Para:
 Criar um projeto:
 django-admin startproject
@@ -6,7 +7,7 @@ django-admin startproject
 Criar um app:
 django-admin startapp
 
-Criar as tabelas defalt do django
+Criar as tabelas default do django
 python manage.py migrate
 
 Criar usuário:
